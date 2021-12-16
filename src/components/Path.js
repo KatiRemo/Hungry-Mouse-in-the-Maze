@@ -19,7 +19,7 @@ class Path extends React.Component {
     }
 
     for (let j = 0; j < 16; j++) {
-      if (this.props.maze[j] == 0) {
+      if (this.props.maze[j] === 0) {
         this.foundPath[j] = 2;
       }
     }
@@ -35,13 +35,14 @@ class Path extends React.Component {
   findColor = () => {
     this.pathIdx += 1;
     let result = this.foundPath[this.pathIdx];
-    if (result == 2) {
+    if (result === 2) {
       result = 0;
-    } else if (result == 0) {
+    } 
+    else if (result === 0) {
       result = 2;
     }
 
-    if (this.pathIdx == 14) {
+    if (this.pathIdx === 14) {
       this.pathIdx = 0;
     }
     return result;
@@ -57,63 +58,60 @@ class Path extends React.Component {
     this.createFoundPath();
     this.printOnConsole();
     return (
-      <span className="path">
+      <span className = "path">
         <br></br>
-        <Grid container spacing={2} justify="center" direction="column">
+        <Grid container spacing = {2} justify = "center" direction = "column">
           <p>
-            <Grid container spacing={1} justify="center" direction="row">
+            <Grid container spacing = {1} justify = "center" direction = "row">
               <Grid item>
-                <Paper style={{ background: "#98fb98" }} elevation={3}>
-                  <Box padding={2} height={35} width={35}>
+                <Paper style = {{ background: "#98fb98" }} elevation = {3}>
+                  <Box padding = {2} height = {35} width = {35}>
                     <center>
                       <img
-                        src={mouse}
-                        height={50}
-                        width={50}
-                        vertical-align="middle"
+                        src = {mouse}
+                        height = {50}
+                        width = {50}
+                        vertical-align = "middle"
                       ></img>
                     </center>
                   </Box>
                 </Paper>
               </Grid>
-              <Cell N={this.findColor()}></Cell>
-              <Cell N={this.findColor()}></Cell>
-              <Cell N={this.findColor()}></Cell>
+              <Cell N = {this.findColor()}></Cell>
+              <Cell N = {this.findColor()}></Cell>
+              <Cell N = {this.findColor()}></Cell>
             </Grid>
           </p>
-
           <p>
-            <Grid container spacing={1} justify="center" direction="row">
-              <Cell N={this.findColor()}></Cell>
-              <Cell N={this.findColor()}></Cell>
-              <Cell N={this.findColor()}></Cell>
-              <Cell N={this.findColor()}></Cell>
+            <Grid container spacing = {1} justify = "center" direction = "row">
+              <Cell N = {this.findColor()}></Cell>
+              <Cell N = {this.findColor()}></Cell>
+              <Cell N = {this.findColor()}></Cell>
+              <Cell N = {this.findColor()}></Cell>
             </Grid>
           </p>
-
           <p>
-            <Grid container spacing={1} justify="center" direction="row">
-              <Cell N={this.findColor()}></Cell>
-              <Cell N={this.findColor()}></Cell>
-              <Cell N={this.findColor()}></Cell>
-              <Cell N={this.findColor()}></Cell>
+            <Grid container spacing = {1} justify = "center" direction = "row">
+              <Cell N = {this.findColor()}></Cell>
+              <Cell N = {this.findColor()}></Cell>
+              <Cell N = {this.findColor()}></Cell>
+              <Cell N = {this.findColor()}></Cell>
             </Grid>
           </p>
-
           <p>
-            <Grid container spacing={1} justify="center" direction="row">
-              <Cell N={this.findColor()}></Cell>
-              <Cell N={this.findColor()}></Cell>
-              <Cell N={this.findColor()}></Cell>
+            <Grid container spacing = {1} justify = "center" direction = "row">
+              <Cell N = {this.findColor()}></Cell>
+              <Cell N = {this.findColor()}></Cell>
+              <Cell N = {this.findColor()}></Cell>
               <Grid item>
-                <Paper style={{ background: "#98fb98" }} elevation={3}>
-                  <Box padding={2} height={35} width={35}>
+                <Paper style = {{ background: "#98fb98" }} elevation={3}>
+                  <Box padding = {2} height = {35} width = {35}>
                     <center>
                       <img
-                        src={win}
-                        height={50}
-                        width={50}
-                        vertical-align="middle"
+                        src = {win}
+                        height = {50}
+                        width = {50}
+                        vertical-align = "middle"
                       ></img>
                     </center>
                   </Box>

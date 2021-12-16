@@ -4,7 +4,7 @@ import '../index.css';
 
 const styles1 = {
     paper: {
-      background: "#98fb98",
+      background: "#00fa9a",
     }
 };
   
@@ -18,10 +18,10 @@ const useStyles1 = makeStyles(styles1);
 const useStyles2 = makeStyles(styles2);
 
 function Cell(props) { 
-    if(props.N == 0) {
+    if(props.N === 0) {
       return(<RedCell></RedCell>);      
     }
-    else if(props.N == 1) {
+    else if(props.N === 1) {
       return(<GreenCell></GreenCell>)
     }
     else {

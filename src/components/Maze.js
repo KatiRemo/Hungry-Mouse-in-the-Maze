@@ -125,7 +125,7 @@ class Maze extends React.Component {
   };
 
   render() {
-    this.matrix = new Array();
+    this.matrix = new Array([]);
     this.matrix = [2];
     this.generateMatrix();
     this.calculatePaths();
@@ -147,6 +147,7 @@ class Maze extends React.Component {
                         height = {50}
                         width = {50}
                         vertical-align = "middle"
+                        alt="mouse"
                       ></img>
                     </center>
                   </Box>
@@ -187,6 +188,7 @@ class Maze extends React.Component {
                         height = {50}
                         width = {50}
                         vertical-align = "middle"
+                        alt="cheese"
                       ></img>
                     </center>
                   </Box>

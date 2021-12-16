@@ -6,9 +6,6 @@ import win from "./assets/win.svg";
 import "../index.css";
 
 class Path extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   pathIdx = 0;
   foundPath = [];
@@ -64,7 +61,7 @@ class Path extends React.Component {
           <p>
             <Grid container spacing = {1} justify = "center" direction = "row">
               <Grid item>
-                <Paper style = {{ background: "#98fb98" }} elevation = {3}>
+                <Paper style = {{ background: "#00fa9a" }} elevation = {3}>
                   <Box padding = {2} height = {35} width = {35}>
                     <center>
                       <img
@@ -72,6 +69,7 @@ class Path extends React.Component {
                         height = {50}
                         width = {50}
                         vertical-align = "middle"
+                        alt="mouse"
                       ></img>
                     </center>
                   </Box>
@@ -104,7 +102,7 @@ class Path extends React.Component {
               <Cell N = {this.findColor()}></Cell>
               <Cell N = {this.findColor()}></Cell>
               <Grid item>
-                <Paper style = {{ background: "#98fb98" }} elevation={3}>
+                <Paper style = {{ background: "#00fa9a" }} elevation={3}>
                   <Box padding = {2} height = {35} width = {35}>
                     <center>
                       <img
@@ -112,6 +110,7 @@ class Path extends React.Component {
                         height = {50}
                         width = {50}
                         vertical-align = "middle"
+                        alt="mouseOnCheese"
                       ></img>
                     </center>
                   </Box>

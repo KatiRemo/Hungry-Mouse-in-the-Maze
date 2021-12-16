@@ -127,7 +127,6 @@ class Maze extends React.Component {
   handleClick = (e) => {
     e.preventDefault();
     window.location.reload(false);
-    // console.log("The link was clicked.");
   };
 
   render() {
@@ -153,6 +152,7 @@ class Maze extends React.Component {
                         height={75}
                         width={75}
                         vertical-align="middle"
+                        alt="rat"
                       ></img>
                     </center>
                   </Box>
@@ -193,9 +193,10 @@ class Maze extends React.Component {
                     <center>
                       <img
                         src={cheese}
-                        height={70}
-                        width={70}
+                        height={60}
+                        width={60}
                         vertical-align="middle"
+                        alt="cheese"
                       ></img>
                     </center>
                   </Box>
@@ -208,7 +209,7 @@ class Maze extends React.Component {
               <Button className="button"
                 onClick={this.handleClick}
                 style={{
-                  background: "aquamarine",
+                  background: "deepskyblue",
                   margin: 15,
                   color: "charcoal",
                   padding: 8,
@@ -219,7 +220,7 @@ class Maze extends React.Component {
               <Button className="button"
                 onClick={this.findPaths}
                 style={{
-                  background: "aquamarine",
+                  background: "deepskyblue",
                   margin: 15,
                   color: "charcoal",
                   padding: 8,

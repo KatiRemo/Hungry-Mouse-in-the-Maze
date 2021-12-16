@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { Grid, Paper, Box } from "@material-ui/core";
 import Cell from "./Cell";
 import rat from "./assets/rat.png";
@@ -65,7 +64,7 @@ class Path extends React.Component {
           <p>
             <Grid container spacing={1} justify="center" direction="row">
               <Grid item>
-                <Paper style={{ background: "#4CAF50" }} elevation={3}>
+                <Paper style={{ background: "#00fa9a" }} elevation={3}>
                   <Box padding={2} height={50} width={50}>
                     <center>
                       <img
@@ -108,7 +107,7 @@ class Path extends React.Component {
               <Cell N={this.findColor()}></Cell>
               <Cell N={this.findColor()}></Cell>
               <Grid item>
-                <Paper style={{ background: "#4CAF50" }} elevation={3}>
+                <Paper style={{ background: "#00fa9a" }} elevation={3}>
                   <Box padding={2} height={50} width={50}>
                     <center>
                       <img

@@ -4,7 +4,7 @@ import "../index.css";
 
 const styles1 = {
     paper: {
-      background: "#98fb98",
+      background: "#00fa9a",
     }
 };
   

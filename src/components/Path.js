@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, Paper, Box } from "@material-ui/core";
 import Cell from "./Cell";
 import mouse from "./assets/mouse.png";
-import queso from "./assets/queso.png";
+import win from "./assets/win.svg";
 import "../index.css";
 
 class Path extends React.Component {
@@ -63,8 +63,8 @@ class Path extends React.Component {
           <p>
             <Grid container spacing={1} justify="center" direction="row">
               <Grid item>
-                <Paper style={{ background: "#77DD77" }} elevation={3}>
-                  <Box padding={2} height={30} width={30}>
+                <Paper style={{ background: "#98fb98" }} elevation={3}>
+                  <Box padding={2} height={35} width={35}>
                     <center>
                       <img
                         src={mouse}
@@ -106,11 +106,11 @@ class Path extends React.Component {
               <Cell N={this.findColor()}></Cell>
               <Cell N={this.findColor()}></Cell>
               <Grid item>
-                <Paper style={{ background: "#77DD77" }} elevation={3}>
-                  <Box padding={2} height={30} width={30}>
+                <Paper style={{ background: "#98fb98" }} elevation={3}>
+                  <Box padding={2} height={35} width={35}>
                     <center>
                       <img
-                        src={queso}
+                        src={win}
                         height={50}
                         width={50}
                         vertical-align="middle"

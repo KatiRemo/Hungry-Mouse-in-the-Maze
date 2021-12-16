@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 body {
   margin: 10;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f0fff0;
+  background: rgb(240, 255, 240);
+  background: radial-gradient(
+    circle,
+    rgba(240, 255, 240, 1) 52%,
+    rgba(168, 228, 160, 1) 100%
+  );
 }
 
 p {
@@ -14,8 +19,8 @@ p {
 
 img {
   position: relative;
-  left: -12px;
-  top: -10px;
+  left: -9px;
+  top: -5px;
   border: none;
 }
 
@@ -23,7 +28,7 @@ h1 {
   text-align: center;
   color: #333;
   padding: 20px;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 h3 {
@@ -34,10 +39,6 @@ h3 {
 .button {
   width: 125px;
   height: auto;
-  box-shadow: 0 0 5px #333;
-  font-family: 'Lato', sans-serif;
-}
-
-button:hover {
-  box-shadow: 0 0 10px #333;
+  box-shadow: 0px 0 5px #333;
+  font-family: "Lato", sans-serif;
 }

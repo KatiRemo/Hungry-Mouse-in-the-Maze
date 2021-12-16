@@ -133,7 +133,7 @@ class Maze extends React.Component {
     return (
       <span className="maze">
         <center>
-          <h1>Rat in a Maze</h1>
+          <h1>Hungry Mouse in the Maze</h1>
         </center>
         {/* <br></br> */}
         <Grid container spacing={2} justify="center" direction="column">
@@ -141,7 +141,7 @@ class Maze extends React.Component {
             <Grid container spacing={1} justify="center" direction="row">
               <Grid item>
                 <Paper elevation={3}>
-                  <Box padding={2} height={30} width={30}>
+                  <Box padding={2} height={35} width={35}>
                     <center>
                       <img
                         src={mouse}
@@ -184,7 +184,7 @@ class Maze extends React.Component {
               <Cell N={this.index()}></Cell>
               <Grid item>
                 <Paper elevation={3}>
-                  <Box padding={2} height={30} width={30}>
+                  <Box padding={2} height={35} width={35}>
                     <center>
                       <img
                         src={queso}
@@ -203,9 +203,8 @@ class Maze extends React.Component {
               <Button className="button"
                 onClick={this.handleClick}
                 style={{
-                  margin: 15,
-                  background: "#c9c9ff",
-                  padding: 8,
+                  margin: 12,
+                  padding: 6,
                 }}
               >
                 <b>New maze</b>
@@ -213,9 +212,8 @@ class Maze extends React.Component {
               <Button className="button"
                 onClick={this.findPaths}
                 style={{
-                  margin: 15,
-                  background: "#c9c9ff",
-                  padding: 8,
+                  margin: 12,
+                  padding: 6,
                 }}
               >
                 <b> Find Paths </b>

@@ -4,13 +4,13 @@ import '../index.css';
 
 const styles1 = {
     paper: {
-      background: "#77DD77",
+      background: "#98fb98",
     }
 };
   
 const styles2 = {
     paper: {
-      background: "#EA3C53",
+      background: "#ff6961",
     }
 };
 
@@ -35,7 +35,7 @@ function WhiteCell() {
   return (
     <Grid item>
     <Paper elevation={3}>
-      <Box padding={2} height={30} width = {30} >              
+      <Box padding={2} height={35} width = {35} >              
                   
       </Box>
     </Paper> 
@@ -48,7 +48,7 @@ function RedCell() {
       return (
           <Grid item>
           <Paper className={classes.paper} elevation={3}>
-            <Box padding={2} height={30} width = {30} >                       
+            <Box padding={2} height={35} width = {35} >                       
             </Box>
           </Paper> 
           </Grid>    
@@ -60,7 +60,7 @@ function GreenCell() {
         return (
             <Grid item>
             <Paper className={classes.paper} elevation={3}>
-              <Box padding={2} height={30} width = {30} >                    
+              <Box padding={2} height={35} width = {35} >                    
               </Box>
             </Paper> 
             </Grid>    

@@ -94,7 +94,7 @@ class Maze extends React.Component {
     return (
       <div className="maze">
         <center>
-          <b>Total Paths = {this.numPaths} </b>{" "}
+          <b><h4>Total Paths = {this.numPaths} </h4></b>{" "}
         </center>
       </div>
     );
@@ -139,9 +139,8 @@ class Maze extends React.Component {
     return (
       <span className="maze">
         <center>
-          <h1>Rat in a Maze</h1>
+          <h1>Rat in the Maze</h1>
         </center>
-        <br></br>
         <Grid container spacing={2} justify="center" direction="column">
           <p>
             <Grid container spacing={1} justify="center" direction="row">
@@ -209,18 +208,20 @@ class Maze extends React.Component {
               <Button className="button"
                 onClick={this.handleClick}
                 style={{
+                  background: "aquamarine",
                   margin: 15,
-                  color: "white",
+                  color: "charcoal",
                   padding: 8,
                 }}
               >
-                <b>Generate new maze</b>
+                <b>New maze</b>
               </Button>
               <Button className="button"
                 onClick={this.findPaths}
                 style={{
+                  background: "aquamarine",
                   margin: 15,
-                  color: "white",
+                  color: "charcoal",
                   padding: 8,
                 }}
               >

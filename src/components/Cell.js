@@ -4,13 +4,13 @@ import "../index.css";
 
 const styles1 = {
     paper: {
-      background: "#4CAF50",
+      background: "#98fb98",
     }
 };
   
 const styles2 = {
     paper: {
-      background: "#FF5757",
+      background: "#ff355e",
     }
 };
 

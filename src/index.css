@@ -5,13 +5,8 @@ body {
   font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #c4aead;
+  background-color: #f0fff0;
 }
-
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-} */
 
 p {
   margin: 5px;
@@ -31,12 +26,12 @@ h1 {
   font-size: 3rem;
 }
 
-h4 {
+h3 {
   color: #333;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
-button {
+.button {
   width: 125px;
   height: auto;
   box-shadow: 0 0 5px #333;

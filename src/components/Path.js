@@ -1,8 +1,8 @@
 import React from "react";
 import { Grid, Paper, Box } from "@material-ui/core";
 import Cell from "./Cell";
-import rat from "./assets/rat.png";
-import cheese from "./assets/cheese.png";
+import mouse from "./assets/mouse.png";
+import queso from "./assets/queso.png";
 import "../index.css";
 
 class Path extends React.Component {
@@ -19,7 +19,7 @@ class Path extends React.Component {
     }
 
     for (let j = 0; j < 16; j++) {
-      if (this.props.maze[j] === 0) {
+      if (this.props.maze[j] == 0) {
         this.foundPath[j] = 2;
       }
     }
@@ -35,14 +35,13 @@ class Path extends React.Component {
   findColor = () => {
     this.pathIdx += 1;
     let result = this.foundPath[this.pathIdx];
-    if (result === 2) {
+    if (result == 2) {
       result = 0;
-    } 
-    else if (result === 0) {
+    } else if (result == 0) {
       result = 2;
     }
 
-    if (this.pathIdx === 14) {
+    if (this.pathIdx == 14) {
       this.pathIdx = 0;
     }
     return result;
@@ -64,13 +63,13 @@ class Path extends React.Component {
           <p>
             <Grid container spacing={1} justify="center" direction="row">
               <Grid item>
-                <Paper style={{ background: "#00fa9a" }} elevation={3}>
-                  <Box padding={2} height={50} width={50}>
+                <Paper style={{ background: "#77DD77" }} elevation={3}>
+                  <Box padding={2} height={30} width={30}>
                     <center>
                       <img
-                        src={rat}
-                        height={75}
-                        width={75}
+                        src={mouse}
+                        height={50}
+                        width={50}
                         vertical-align="middle"
                       ></img>
                     </center>
@@ -107,13 +106,13 @@ class Path extends React.Component {
               <Cell N={this.findColor()}></Cell>
               <Cell N={this.findColor()}></Cell>
               <Grid item>
-                <Paper style={{ background: "#00fa9a" }} elevation={3}>
-                  <Box padding={2} height={50} width={50}>
+                <Paper style={{ background: "#77DD77" }} elevation={3}>
+                  <Box padding={2} height={30} width={30}>
                     <center>
                       <img
-                        src={cheese}
-                        height={70}
-                        width={70}
+                        src={queso}
+                        height={50}
+                        width={50}
                         vertical-align="middle"
                       ></img>
                     </center>
